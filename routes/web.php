@@ -7,6 +7,7 @@ use App\Livewire\MedicareServicePartB;
 use App\Livewire\MedicareServicePartC;
 use App\Livewire\MedicareServicePartD;
 use App\Livewire\MedigapMedicareSupplementInsurance;
+use App\Livewire\PrescriptionDrugCoverage;
 use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Route;
 
@@ -21,6 +22,7 @@ Route::get('/medicare-service-part-c', MedicareServicePartC::class)->name('medic
 Route::get('/medicare-service-part-d', MedicareServicePartD::class)->name('medicare-service-part-d');
 Route::get('/medicare-advantage-plan', MedicareAdvantangePlans::class)->name('medicare-advantage-plan');
 Route::get('/medigap-medicare-supplement-insurance', MedigapMedicareSupplementInsurance::class)->name('medigap-medicare-supplement-insurance');
+Route::get('/prescription-drug-coverage', PrescriptionDrugCoverage::class)->name('prescription-drug-coverage');
 // Route::get('/', function () {
 //     return view('welcome');
 // })->name('home');

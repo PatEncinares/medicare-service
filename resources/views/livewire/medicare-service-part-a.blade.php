@@ -9,7 +9,7 @@
                 class="absolute inset-0 w-full h-full object-cover object-[80%] md:object-center"
             />
             <!-- Gradient Overlay -->
-            <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#16739B] via-[#16739bcc] to-transparent"></div>
+            {{-- <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#16739B] via-[#16739bcc] to-transparent"></div> --}}
             
             <!-- Content -->
             <div class="relative z-10 h-full flex flex-col justify-end items-start pb-10 px-6 md:justify-center md:pb-0 md:px-16">
