@@ -64,7 +64,7 @@
                             </svg>
                         </button>
                         <!-- Mobile Navigation links -->
-                        <nav class="flex flex-col w-full px-6 mt-1">
+                        <nav class="flex flex-col w-full px-6 mt-5">
                             <a href="/" class="text-2xl font-semibold text-gray-900 py-3 border-b border-gray-200 hover:text-blue-600 transition" @click="open = false">Home</a>
                             <a href="#medicare-plans" class="text-2xl font-semibold text-gray-900 py-3 border-b border-gray-200 hover:text-blue-600 transition" @click="open = false">Medicare Plans</a>
                             <a href="#about" class="text-2xl font-semibold text-gray-900 py-3 border-b border-gray-200 hover:text-blue-600 transition" @click="open = false">About us</a>
