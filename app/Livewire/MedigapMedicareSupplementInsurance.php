@@ -4,11 +4,11 @@ namespace App\Livewire;
 
 use Livewire\Component;
 
-class MedicareAdvantangePlans extends Component
+class MedigapMedicareSupplementInsurance extends Component
 {
     public function render()
     {
-        return view('livewire.medicare-advantange-plans')
+        return view('livewire.medigap-medicare-supplement-insurance')
             ->layout('components.layouts.guest')
             ->layoutData([
                 'title' => 'Home',
