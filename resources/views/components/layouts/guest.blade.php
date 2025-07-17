@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
-        {{-- <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
+        <script src="//unpkg.com/alpinejs" defer></script>
 
-
-        @if (null !== $yoast_head)
+        {{-- @if (null !== $yoast_head)
             {!! $yoast_head !!}
-        @else
-            <title>{{ $meta['meta_title'] }}</title>
+        @else --}}
+            {{-- <title>{{ $meta['meta_title'] }}</title>
             <meta name="description" content="{{ $meta['meta_description'] }}" />
 
             <meta name="robots" content="{{ $meta['robots'] }}" />
@@ -29,9 +29,9 @@
             <meta property="twitter:url" content="{{ url()->current() }}">
             <meta property="twitter:title" content="{{ $meta['twitter_title'] ?? $meta['meta_title']  }}">
             <meta property="twitter:description" content="{{ $meta['twitter_description'] ?? $meta['meta_description']  }}">
-            <meta property="twitter:image" content="{{ asset('resources/assets/tvinternetdeals-social-banner.jpg') }}">
+            <meta property="twitter:image" content="{{ asset('resources/assets/tvinternetdeals-social-banner.jpg') }}"> --}}
             
-        @endif --}}
+        {{-- @endif --}}
 
         
 
