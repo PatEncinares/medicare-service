@@ -2,6 +2,7 @@
 
 use App\Livewire\Home;
 use App\Livewire\MedicareServicePartA;
+use App\Livewire\MedicareServicePartB;
 use Livewire\Volt\Volt;
 use Illuminate\Support\Facades\Route;
 
@@ -11,6 +12,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', Home::class)->name('home');
 Route::get('/medicare-service-part-a', MedicareServicePartA::class)->name('medicare-service-part-a');
+Route::get('/medicare-service-part-b', MedicareServicePartB::class)->name('medicare-service-part-b');
 
 // Route::get('/', function () {
 //     return view('welcome');

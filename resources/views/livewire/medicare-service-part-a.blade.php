@@ -77,12 +77,6 @@
         </div>
     </section>
 
-
-
-
-
-
-
         <!-- CUSTOMER TESTIMONIALS SECTION -->
     <livewire:partials.costumer-feed-backs />  
 
