@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Home;
+use App\Livewire\MedicareAdvantangePlans;
 use App\Livewire\MedicareServicePartA;
 use App\Livewire\MedicareServicePartB;
 use App\Livewire\MedicareServicePartC;
@@ -17,6 +18,7 @@ Route::get('/medicare-service-part-a', MedicareServicePartA::class)->name('medic
 Route::get('/medicare-service-part-b', MedicareServicePartB::class)->name('medicare-service-part-b');
 Route::get('/medicare-service-part-c', MedicareServicePartC::class)->name('medicare-service-part-c');
 Route::get('/medicare-service-part-d', MedicareServicePartD::class)->name('medicare-service-part-d');
+Route::get('/medicare-advantage-plan', MedicareAdvantangePlans::class)->name('medicare-advantage-plan');
 // Route::get('/', function () {
 //     return view('welcome');
 // })->name('home');
