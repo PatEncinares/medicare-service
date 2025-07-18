@@ -41,19 +41,19 @@
         <div class="relative z-20 w-full h-[650px] sm:h-full px-6 sm:px-12 lg:px-24 pt-60 sm:pt-40 lg:pt-60 pb-8 sm:pb-16 text-white flex flex-col items-start justify-center">
             <div class="max-w-2xl w-full sm:text-left">
                 <h1 class="text-3xl sm:text-6xl font-bold leading-tight sm:leading-snug mb-6 sm:mb-8">
-                    Trusted Medicare Help,<br class="hidden sm:block">Tailored Just for You
+                    {{ $headline }}<br class="hidden sm:block">{{ $subheadline }}
                 </h1>
                 <p class="text-base sm:text-xl mb-6 sm:mb-8 text-white/90">
-                    We help seniors and families easily understand and enroll in the best Medicare plans—at no extra cost to you.
+                    {{ $description }}
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 w-full sm:w-auto sm:inline-flex justify-start">
                     <a href="#consultation"
                     class="bg-orange-500 text-white text-center px-6 py-3 rounded-full font-medium hover:bg-orange-600 transition">
-                        Get Free Consultation
+                        {{ $button1_text }}
                     </a>
                     <a href="tel:8447316614"
                     class="border border-white text-white text-center px-6 py-3 rounded-full font-medium hover:bg-white hover:text-black transition">
-                        <i class="fa-solid fa-phone mr-2"></i>Call Now
+                        <i class="fa-solid fa-phone mr-2"></i>{{ $button2_text }}
                     </a>
                 </div>
             </div>
