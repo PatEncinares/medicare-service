@@ -6,32 +6,29 @@
         <meta name="csrf-token" content="{{ csrf_token() }}">
         <script src="//unpkg.com/alpinejs" defer></script>
 
-        {{-- @if (null !== $yoast_head)
-            {!! $yoast_head !!}
-        @else --}}
-            {{-- <title>{{ $meta['meta_title'] }}</title>
-            <meta name="description" content="{{ $meta['meta_description'] }}" />
 
-            <meta name="robots" content="{{ $meta['robots'] }}" />
+            <title>{{ $meta_title }}</title>
+            <meta name="description" content="{{ $meta_description }}" />
+
+            <meta name="robots" content="{{ $robot }}" />
             
-            <link rel="canonical" href="{{ $canonicalUrl ?? url()->current() }}">
+            {{-- <link rel="canonical" href="{{ $canonicalUrl ?? url()->current() }}"> --}}
 
 
             <!-- Open Graph / Facebook -->
-            <meta property="og:type" content="{{ $meta['og_type'] ??  'website' }}">
+            {{-- <meta property="og:type" content="{{ $meta['og_type'] ??  'website' }}">
             <meta property="og:url" content="{{ url()->current() }}">
             <meta property="og:title" content="{{ $meta['og_title'] ?? $meta['meta_title']  }}">
             <meta property="og:description" content="{{ $meta['og_description'] ?? $meta['meta_description']  }}">
-            <meta property="og:image" content="{{ asset('resources/assets/tvinternetdeals-social-banner.jpg') }}"> 
+            <meta property="og:image" content="{{ asset('resources/assets/tvinternetdeals-social-banner.jpg') }}">  --}}
 
             <!-- Twitter -->
-            <meta property="twitter:card" content="summary_large_image">
+            {{-- <meta property="twitter:card" content="summary_large_image">
             <meta property="twitter:url" content="{{ url()->current() }}">
-            <meta property="twitter:title" content="{{ $meta['twitter_title'] ?? $meta['meta_title']  }}">
-            <meta property="twitter:description" content="{{ $meta['twitter_description'] ?? $meta['meta_description']  }}">
-            <meta property="twitter:image" content="{{ asset('resources/assets/tvinternetdeals-social-banner.jpg') }}"> --}}
-            
-        {{-- @endif --}}
+            <meta property="twitter:title" content="{{  ['meta_title']  }}">
+            <meta property="twitter:description" content="{{   ['meta_description']  }}"> --}}
+            {{-- <meta property="twitter:image" content="{{ asset('resources/assets/tvinternetdeals-social-banner.jpg') }}"> --}}
+
 
         
 
