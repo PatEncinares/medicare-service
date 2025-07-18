@@ -2,6 +2,7 @@
 
 use App\Livewire\Home;
 use App\Livewire\MedicalInsuranceProviderCoveragePageContent;
+use App\Livewire\MedicalInsuranceProviderCoveragePageContentPart2;
 use App\Livewire\MedicareAdvantangePlans;
 use App\Livewire\MedicareServiceBlogs;
 use App\Livewire\MedicareServiceBlogsContents;
@@ -29,6 +30,7 @@ Route::get('/prescription-drug-coverage', PrescriptionDrugCoverage::class)->name
 Route::get('/medicare-blogs', MedicareServiceBlogs::class)->name('medicare-blogs');
 Route::get('/medicare-blogs-contents', MedicareServiceBlogsContents::class)->name('medicare-blogs-contents');
 Route::get('/medical-insurance-provide-coverage-page', MedicalInsuranceProviderCoveragePageContent::class)->name('medical-insurance-provide-coverage-page');
+Route::get('/medical-insurance-provide-coverage-page-part-2', MedicalInsuranceProviderCoveragePageContentPart2::class)->name('medical-insurance-provide-coverage-page-part-2');
 // Route::get('/', function () {
 //     return view('welcome');
 // })->name('home');

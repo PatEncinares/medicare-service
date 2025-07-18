@@ -5,17 +5,37 @@
         <img src="{{ asset('images/hero-images/hero-image.png') }}"
             alt="Medicare help"
             class="block absolute inset-0 w-full h-[420px] sm:h-full object-cover opacity-80" />
-
-        <!-- Gradient Overlay: full on desktop, bottom half on mobile -->
+            
+        <!-- Left-side gradient: only visible on sm and up -->
         <div 
-            class="absolute z-10 w-full left-0"
+            class="hidden sm:block absolute z-10 w-full h-full left-0 top-0 pointer-events-none"
             style="
-                height: 100%;
+                background: linear-gradient(
+                    to right,
+                    rgba(12,105,133,0.55) 0%,
+                    rgba(12,105,133,0.28) 40%,
+                    rgba(12,105,133,0.07) 60%,
+                    rgba(12,105,133,0) 100%
+                );
             ">
-            <!-- Desktop: full overlay, Mobile: gradient bottom only -->
-            <div class="hidden sm:block absolute inset-0 bg-gradient-to-r from-[#0C6985] via-[#0C6985cc] to-transparent h-full w-full"></div>
-            <div class="block sm:hidden absolute bottom-0 left-0 w-full h-2/3 bg-gradient-to-b from-transparent via-[#0C6985cc] to-[#0C6985]"></div>
         </div>
+
+        <!-- Bottom gradient: only visible on mobile -->
+        <div 
+            class="block sm:hidden absolute z-10 w-full h-full left-0 top-0 pointer-events-none"
+            style="
+                background: linear-gradient(
+                    to top,
+                    rgba(12,105,133,0.66) 0%,
+                    rgba(12,105,133,0.22) 55%,
+                    rgba(12,105,133,0) 100%
+                );
+            ">
+        </div>
+
+
+
+
 
         <!-- Content always above -->
         <div class="relative z-20 w-full h-[650px] sm:h-full px-6 sm:px-12 lg:px-24 pt-60 sm:pt-40 lg:pt-60 pb-8 sm:pb-16 text-white flex flex-col items-start justify-center">

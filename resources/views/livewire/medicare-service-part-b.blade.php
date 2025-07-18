@@ -8,8 +8,33 @@
                 alt="Medicare Part B"
                 class="absolute inset-0 w-full h-full object-cover object-[80%] md:object-center"
             />
-            <!-- Gradient Overlay -->
-            {{-- <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-[#16739B] via-[#16739bcc] to-transparent"></div> --}}
+           <!-- Left-side gradient: only visible on sm and up -->
+                <div 
+                    class="hidden sm:block absolute z-10 w-full h-full left-0 top-0 pointer-events-none"
+                    style="
+                        background: linear-gradient(
+                            to right,
+                            rgba(12,105,133,0.55) 0%,
+                            rgba(12,105,133,0.28) 40%,
+                            rgba(12,105,133,0.07) 60%,
+                            rgba(12,105,133,0) 100%
+                        );
+                    ">
+                </div>
+
+                <!-- Bottom gradient: only visible on mobile -->
+                <div 
+                    class="block sm:hidden absolute z-10 w-full h-full left-0 top-0 pointer-events-none"
+                    style="
+                        background: linear-gradient(
+                            to top,
+                            rgba(12,105,133,0.66) 0%,
+                            rgba(12,105,133,0.22) 55%,
+                            rgba(12,105,133,0) 100%
+                        );
+                    ">
+                </div>
+
             
             <!-- Content -->
             <div class="relative z-10 h-full flex flex-col justify-end items-start pb-10 px-6 md:justify-center md:pb-0 md:px-16">
