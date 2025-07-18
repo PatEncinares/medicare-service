@@ -2,6 +2,7 @@
 
 use App\Livewire\Home;
 use App\Livewire\MedicareAdvantangePlans;
+use App\Livewire\MedicareServiceBlogs;
 use App\Livewire\MedicareServicePartA;
 use App\Livewire\MedicareServicePartB;
 use App\Livewire\MedicareServicePartC;
@@ -23,6 +24,7 @@ Route::get('/medicare-service-part-d', MedicareServicePartD::class)->name('medic
 Route::get('/medicare-advantage-plan', MedicareAdvantangePlans::class)->name('medicare-advantage-plan');
 Route::get('/medigap-medicare-supplement-insurance', MedigapMedicareSupplementInsurance::class)->name('medigap-medicare-supplement-insurance');
 Route::get('/prescription-drug-coverage', PrescriptionDrugCoverage::class)->name('prescription-drug-coverage');
+Route::get('/medicare-blogs', MedicareServiceBlogs::class)->name('medicare-blogs');
 // Route::get('/', function () {
 //     return view('welcome');
 // })->name('home');
