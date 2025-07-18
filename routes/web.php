@@ -1,6 +1,7 @@
 <?php
 
 use App\Livewire\Home;
+use App\Livewire\MedicalInsuranceProviderCoveragePageContent;
 use App\Livewire\MedicareAdvantangePlans;
 use App\Livewire\MedicareServiceBlogs;
 use App\Livewire\MedicareServiceBlogsContents;
@@ -27,10 +28,11 @@ Route::get('/medigap-medicare-supplement-insurance', MedigapMedicareSupplementIn
 Route::get('/prescription-drug-coverage', PrescriptionDrugCoverage::class)->name('prescription-drug-coverage');
 Route::get('/medicare-blogs', MedicareServiceBlogs::class)->name('medicare-blogs');
 Route::get('/medicare-blogs-contents', MedicareServiceBlogsContents::class)->name('medicare-blogs-contents');
+Route::get('/medical-insurance-provide-coverage-page', MedicalInsuranceProviderCoveragePageContent::class)->name('medical-insurance-provide-coverage-page');
 // Route::get('/', function () {
 //     return view('welcome');
 // })->name('home');
-
+        
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
